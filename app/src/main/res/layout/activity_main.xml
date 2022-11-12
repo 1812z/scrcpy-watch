@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+
+            android:textColor="@android:color/white"
+            android:text="@string/label_server_ip"
+            android:textAppearance="@android:style/TextAppearance" />
+
+        <EditText
+            android:id="@+id/editText_server_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:inputType="none" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/label_video_resolution"
+            android:textAppearance="@android:style/TextAppearance" />
+
+        <Spinner
+            android:id="@+id/spinner_video_resolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            android:entries="@array/options_resolution_keys" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/label_video_bitrate"
+            android:textAppearance="@android:style/TextAppearance" />
+
+        <Spinner
+            android:id="@+id/spinner_video_bitrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            android:entries="@array/options_bitrate_keys" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/switch1"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="0dp"
+            style="@style/spinner_style"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/action_start"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bilibili@1812z"
+        ></TextView>
+</LinearLayout>
+

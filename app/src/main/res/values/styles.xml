@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowSwipeToDismiss" tools:ignore="NewApi">false</item>
+    </style>
+
+    <!-- spinner -->
+    <style name="spinner_style">
+        <item name="android:background">#615F5F</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+
+</resources>
